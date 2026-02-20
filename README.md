@@ -46,51 +46,20 @@ Where:
 
 All aggregates use CPS sampling weights (`WTFINL`).
 
----
+## Predictor variables for synthetic control matching:
+#### Education: 
+College degree indicator constructed as college = (EDUC >= 111), where EDUC values 111-125 correspond to Bachelor's degree or higher in IPUMS coding
+### Marital status: 
+Married indicator defined as married = MARST in [1,2], capturing women with spouse present or absent
+### Age: 
+Continuous variable (25-54) and calculated mean age per state-year
+### Labor force participation (lagged): 
+Annual averages for 2000-2003 and monthly values for pre-treatment period
+All state-year aggregates are calculated using CPS person-level weights (WTFINL) to ensure population-representative estimates.
 
-## Predictor Variables (Synthetic Control Matching)
-
-### Education
-
-college = (EDUC >= 111)
-Predictor Variables (Synthetic Control Matching)
-
-Education
-
-college = (EDUC >= 111)
-
-(EDUC 111–125 = Bachelor's degree or higher)
-
-Marital Status
-
-married = MARST in [1,2]
-
-Age
-
-Continuous (25–54)
-
-Mean age calculated per state-year
-
-Lagged FLFP
-
-Annual averages (2000–2003)
-
-Monthly pre-treatment values
-
-All state-year aggregates are weighted using WTFINL.
-
-Data Quality and Limitations
-Strengths
-
-Balanced Panel: All 51 jurisdictions observed 2000–2010
-
-Large Sample Sizes:
-
-Smallest states: ~3,500 observations/year
-
-California: ~28,577 observations/year
-
-National Representativeness via CPS weights
-
-
+## Data Quality and Limitations
+### Strengths
+Complete temporal coverage: All 51 jurisdictions have data for all 11 years (2000-2010), yielding a perfectly balanced panel with no missing state-year cells.
+Adequate sample sizes: Even the smallest states (Mississippi, Montana) average 3,500+ observations per year, sufficient for reliable state-year FLFP estimates. California, with 28,577 observations per year on average, provides exceptionally precise estimates.
+National representativeness: CPS sampling weights account for demographic oversampling and non-response, making state-year aggregates population-representative.
 
