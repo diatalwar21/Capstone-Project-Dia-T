@@ -39,7 +39,24 @@ Constructed as:
 
 ```python
 in_lf = (LABFORCE == 2)
+'''
+### Labor Force Coding
 
+Where:
+
+- `LABFORCE == 1` → Not in labor force  
+- `LABFORCE == 2` → In labor force  
+
+All aggregates use CPS sampling weights (`WTFINL`).
+
+---
+
+## Predictor Variables (Synthetic Control Matching)
+
+### Education
+
+```python
+college = (EDUC >= 111)
 Predictor Variables (Synthetic Control Matching)
 
 Education
