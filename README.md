@@ -2,8 +2,6 @@
  
 ## California Paid Family Leave and Female Labor Force Participation Analysis
 
-# California Paid Family Leave and Female Labor Force Participation Analysis
-
 ## Data Source and Sample Construction
 
 ### Primary Data Source
