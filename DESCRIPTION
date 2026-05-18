@@ -1,0 +1,18 @@
+Package: CAPaidFamilyLeave
+Title: California Paid Family Leave and Female Labor Force Participation
+Version: 1.0.0
+Authors@R: person("Dia", "Talwar", email = "diatalwar21@gmail.com", role = c("aut", "cre"))
+Description: Replication package for the ECON 620 capstone. Estimates the
+    effect of California's 2004 Paid Family Leave law on female labor force
+    participation using Synthetic Difference-in-Differences
+    (Arkhangelsky et al. 2021).
+License: MIT
+Encoding: UTF-8
+Depends:
+    R (>= 4.1.0)
+Imports:
+    synthdid,
+    dplyr
+Suggests:
+    ggplot2,
+    here

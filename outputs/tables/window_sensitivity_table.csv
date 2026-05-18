@@ -1,0 +1,5 @@
+spec_name,post_window,T1,ATT_pp,jackknife_SE,jackknife_pval,CI_95_lo,CI_95_hi,permutation_pval,pre_trend_RMSE
+Full window,2004 to 2015,12,0.6591,0.4954,0.1906,-0.3119,1.6301,0.5814,0.7744
+Drop 2005 only,"2004, 2006 to 2015",11,0.9505,0.4752,0.052,0.019,1.882,0.3721,0.7593
+Drop 2006 only,"2004 to 2005, 2007 to 2015",11,0.7501,0.4777,0.1239,-0.1862,1.6863,0.4884,0.7593
+Drop both (preferred),2007 to 2015,9,1.1913,0.4897,0.0193,0.2315,2.1511,0.3256,0.7261
